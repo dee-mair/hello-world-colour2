@@ -12,6 +12,10 @@ app.get('/colour/:id', (req, res) => {
     res.status(200).send('You requested ' + req.params.id).end();
   });
 
+  app.get('/shape/:id', (req, res) => {
+    res.status(200).send('You requested ' + req.params.id).end();
+  });
+
 // Start the server
 const PORT = process.env.PORT || 8080;
 app.listen(PORT, () => {
